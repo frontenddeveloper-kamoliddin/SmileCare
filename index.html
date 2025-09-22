@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmileCare Stomatologiya — Zamonaviy va chiroyli tabassum</title>
+    <meta name="description" content="SmileCare stomatologiya: implant, breket, oqartirish, bolalar stomatologiyasi. Qabulga onlayn yoziling." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Swiper (Sliders) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader" aria-hidden="true">
+      <div class="spinner">
+        <svg viewBox="0 0 100 100" class="spinner__tooth" aria-hidden="true">
+          <defs>
+            <linearGradient id="grad" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#38bdf8" />
+              <stop offset="100%" stop-color="#22d3ee" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#grad)" d="M50 12c11 0 25-6 32 6 7 12-2 26-3 36-1 11 4 33-7 33-10 0-11-17-22-17s-12 17-22 17c-11 0-6-22-7-33-1-10-10-24-3-36 7-12 21-6 32-6z"/>
+        </svg>
+        <div class="spinner__dot"></div>
+      </div>
+    </div>
+
+    <!-- Decorative Background -->
+    <div class="bg-animated" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+      <div class="container">
+        <a href="#home" class="logo" aria-label="SmileCare bosh sahifa">
+          <span class="logo__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 100 100">
+              <path fill="currentColor" d="M50 12c11 0 25-6 32 6 7 12-2 26-3 36-1 11 4 33-7 33-10 0-11-17-22-17s-12 17-22 17c-11 0-6-22-7-33-1-10-10-24-3-36 7-12 21-6 32-6z"/>
+            </svg>
+          </span>
+          <span class="logo__text">SmileCare</span>
+        </a>
+        <nav class="nav" aria-label="Asosiy navigatsiya">
+          <button class="nav__toggle" aria-label="Menyuni ochish" aria-expanded="false">☰</button>
+          <ul class="nav__list">
+            <li><a href="#services">Xizmatlar</a></li>
+            <li><a href="#doctors">Shifokorlar</a></li>
+            <li><a href="#gallery">Galereya</a></li>
+            <li><a href="#pricing">Narxlar</a></li>
+            <li><a href="#contact">Aloqa</a></li>
+          </ul>
+        </nav>
+        <a href="#appointment" class="btn btn--primary btn--sm">Qabulga yozilish</a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Zamonaviy stomatologiya
+            <span class="grad">chiroyli tabassum</span> uchun
+          </h1>
+          <p class="hero__subtitle">
+            Implant, breket, oqartirish va bolalar stomatologiyasi. Eng so'nggi texnologiyalar,
+            tajribali shifokorlar va qulay narxlar.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#appointment">Qabulga yozilish</a>
+            <a class="btn btn--ghost btn--lg" href="#services">Xizmatlar</a>
+          </div>
+          
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="tooth-3d">
+            <svg viewBox="0 0 100 100" class="tooth-3d__svg">
+              <defs>
+                <radialGradient id="toothGrad" cx="50%" cy="40%" r="60%">
+                  <stop offset="0%" stop-color="#ffffff" />
+                  <stop offset="60%" stop-color="#dbeafe" />
+                  <stop offset="100%" stop-color="#bfdbfe" />
+                </radialGradient>
+              </defs>
+              <path fill="url(#toothGrad)" d="M50 12c11 0 25-6 32 6 7 12-2 26-3 36-1 11 4 33-7 33-10 0-11-17-22-17s-12 17-22 17c-11 0-6-22-7-33-1-10-10-24-3-36 7-12 21-6 32-6z"/>
+            </svg>
+            <div class="orbit">
+              <span class="orbit__dot"></span>
+              <span class="orbit__dot"></span>
+              <span class="orbit__dot"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Xizmatlarimiz</h2>
+          <p class="section__subtitle">Sifatli davolash va zamonaviy yondashuv</p>
+        </div>
+        <div class="cards cards--services">
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">🎨</div>
+            <h3 class="card__title">Vinerlar</h3>
+            <p class="card__text">Tabiiy ko'rinishga ega, yupqa estetik qoplamalar (laminatlar).</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">💎</div>
+            <h3 class="card__title">Zirkoniy qoplamalar</h3>
+            <p class="card__text">Mustahkam, allergiyasiz va estetik zirkoniy qoplamalar hamda tojlar.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">🛡️</div>
+            <h3 class="card__title">Ortopediya / protezlash</h3>
+            <p class="card__text">Qisman, to'liq va byugel protezlar, ko'priklar va tojlar.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">🩺</div>
+            <h3 class="card__title">Terapiya</h3>
+            <p class="card__text">Kariesni davolash, kanal davosi va og'riqsiz muolajalar.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">🧰</div>
+            <h3 class="card__title">Tish plombalari</h3>
+            <p class="card__text">Estetik kompozit plombalar va qayta tiklash ishlari.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">🪥</div>
+            <h3 class="card__title">Tishlarni tozalash</h3>
+            <p class="card__text">Skaling, AirFlow va polirovka orqali professional tozalash.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">🌿</div>
+            <h3 class="card__title">Halitoz (hidni yo'qotish)</h3>
+            <p class="card__text">Og'iz bo'shlig'i hidini aniqlash va kompleks davolash.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">😬</div>
+            <h3 class="card__title">Breket taqish</h3>
+            <p class="card__text">Metall va keramika breket tizimlari, nazorat ko'riklari.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Doctors -->
+    <section class="section section--alt" id="doctors">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Shifokorlarimiz</h2>
+          <p class="section__subtitle">Tajribali, samimiy va e'tiborli mutaxassislar</p>
+        </div>
+        <div class="cards cards--doctors">
+          <article class="doctor card3d">
+            <div class="doctor__avatar">A</div>
+            <h3 class="doctor__name">Akmal Qodirov</h3>
+            <p class="doctor__role">Implantolog</p>
+            <p class="doctor__desc">800+ implant, 12 yillik tajriba. Zamonaviy jarrohlik usullari.</p>
+          </article>
+          <article class="doctor card3d">
+            <div class="doctor__avatar">N</div>
+            <h3 class="doctor__name">Nilufar Karimova</h3>
+            <p class="doctor__role">Ortodont</p>
+            <p class="doctor__desc">Breket va alignerlar bo'yicha 9+ yil tajriba.</p>
+          </article>
+          <article class="doctor card3d">
+            <div class="doctor__avatar">S</div>
+            <h3 class="doctor__name">Sardor Alimov</h3>
+            <p class="doctor__role">Estetik stomatolog</p>
+            <p class="doctor__desc">Vinerlar, oqartirish, estetik restavratsiyalar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Oldin va keyin</h2>
+          <p class="section__subtitle">Natijalar bilan tanishing</p>
+        </div>
+        <div class="swiper gallery-swiper reveal">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="before-after">
+                <div class="before">Oldin</div>
+                <div class="after">Keyin</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="before-after">
+                <div class="before before--2">Oldin</div>
+                <div class="after after--2">Keyin</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="before-after">
+                <div class="before before--3">Oldin</div>
+                <div class="after after--3">Keyin</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--alt" id="testimonials">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Mijozlar fikri</h2>
+          <p class="section__subtitle">Bizga bildirgan ishonchingiz uchun rahmat</p>
+        </div>
+        <div class="swiper testi-swiper reveal">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide testi">
+              <p class="testi__text">"Qabul juda yoqdi! Og'riqsiz, tez va natijasi a'lo."</p>
+              <div class="testi__author">Dilshoda M.</div>
+            </div>
+            <div class="swiper-slide testi">
+              <p class="testi__text">"Breketlar bilan 10 oyda ideal natija oldim. Tavsiya qilaman!"</p>
+              <div class="testi__author">Javlon R.</div>
+            </div>
+            <div class="swiper-slide testi">
+              <p class="testi__text">"Oqartirishdan keyin tabassumim ancha chiroyli bo'ldi."</p>
+              <div class="testi__author">Malika A.</div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Narxlar</h2>
+          <p class="section__subtitle">Shaffof va qulay tariflar</p>
+        </div>
+        <div class="prices">
+          <div class="price reveal">
+            <h3 class="price__title">Konsultatsiya</h3>
+            <div class="price__value">0 so'm</div>
+            <ul class="price__list">
+              <li>Tekshiruv va tavsiyalar</li>
+              <li>Davolash rejasi</li>
+              <li>Raqamli diagnostika</li>
+            </ul>
+            <a href="#appointment" class="btn btn--primary btn--block">Yozilish</a>
+          </div>
+          <div class="price price--featured reveal">
+            <div class="badge">Mashhur</div>
+            <h3 class="price__title">Oqartirish</h3>
+            <div class="price__value">690 000 so'm</div>
+            <ul class="price__list">
+              <li>1 seans, 60 daqiqa</li>
+              <li>Qayta tekshiruv bepul</li>
+              <li>Uy sharoitida saqlash usullari</li>
+            </ul>
+            <a href="#appointment" class="btn btn--primary btn--block">Yozilish</a>
+          </div>
+          <div class="price reveal">
+            <h3 class="price__title">Implant</h3>
+            <div class="price__value">3 900 000 so'm</div>
+            <ul class="price__list">
+              <li>Implant o'rnatish</li>
+              <li>Shifobaxsh vint</li>
+              <li>Garantiya 3 yil</li>
+            </ul>
+            <a href="#appointment" class="btn btn--primary btn--block">Yozilish</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Appointment -->
+    <section class="section section--alt" id="appointment">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Qabulga yoziling</h2>
+          <p class="section__subtitle">Qisqa forma orqali so'rov qoldiring</p>
+        </div>
+        <form class="form" id="appointmentForm" novalidate>
+          <div class="form__row">
+            <label class="form__field">
+              <span>Ism</span>
+              <input type="text" name="name" placeholder="Ismingiz" required />
+            </label>
+            <label class="form__field">
+              <span>Telefon</span>
+              <input type="tel" name="phone" placeholder="90 123 45 67" required />
+            </label>
+          </div>
+          <div class="form__row">
+            <label class="form__field">
+              <span>Xizmat turi</span>
+              <select name="service" required>
+                <option value="">Tanlang</option>
+                <option>Vinerlar</option>
+                <option>Zirkoniy qoplamalar</option>
+                <option>Ortopediya / protezlash</option>
+                <option>Terapiya</option>
+                <option>Tish plombalari</option>
+                <option>Tishlarni tozalash</option>
+                <option>Halitoz (hidni yo'qotish)</option>
+                <option>Breket taqish</option>
+              </select>
+            </label>
+            <label class="form__field">
+              <span>Sana</span>
+              <input type="date" name="date" required />
+            </label>
+          </div>
+          <label class="form__field form__field--full">
+            <span>Izoh (ixtiyoriy)</span>
+            <textarea name="message" rows="4" placeholder="Qisqacha yozing..."></textarea>
+          </label>
+          <div class="form__actions">
+            <button class="btn btn--primary btn--lg" type="submit">Yuborish</button>
+            <span class="form__note">Operatorimiz tez orada bog'lanadi</span>
+          </div>
+          <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Ko'p beriladigan savollar</h2>
+        </div>
+        <div class="accordion">
+          <details class="accordion__item reveal">
+            <summary>Qanday hujjatlar kerak?</summary>
+            <div class="accordion__content">Pasport yoki ID karta kifoya. Tibbiy kartangiz bo'lsa, olib keling.</div>
+          </details>
+          <details class="accordion__item reveal">
+            <summary>Og'riq bo'ladimi?</summary>
+            <div class="accordion__content">Zamonaviy anesteziya usullari qo'llanadi. Jarayon maksimal darajada qulay.</div>
+          </details>
+          <details class="accordion__item reveal">
+            <summary>To'lov turlari?</summary>
+            <div class="accordion__content">Naqd, karta va bo'lib-bo'lib to'lash imkoniyati mavjud.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Aloqa</h2>
+          <p class="section__subtitle">Manzilimiz va ish vaqti</p>
+        </div>
+        <div class="contact">
+          <div class="contact__info reveal">
+            <ul class="contact__list">
+              <li><strong>Manzil:</strong> Toshkent, Amir Temur ko'chasi 12</li>
+              <li><strong>Telefon:</strong> +998 90 123 45 67</li>
+              <li><strong>Ish vaqti:</strong> Du-Yak: 9:00 — 20:00</li>
+              <li><strong>Email:</strong> info@smilecare.uz</li>
+            </ul>
+            <div class="socials">
+              <a href="#" aria-label="Telegram" class="socials__item">↗ TG</a>
+              <a href="#" aria-label="Instagram" class="socials__item">↗ IG</a>
+              <a href="#" aria-label="Facebook" class="socials__item">↗ FB</a>
+            </div>
+          </div>
+          <div class="contact__map reveal" aria-hidden="true">
+            <iframe title="Xarita" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.886598130999!2d69.2401!3d41.2995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDFgMTcnNTguMiJOIDY5wrAxNCcwNC4zIkU!5e0!3m2!1suz!2s!4v1680000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <a href="#home" class="logo" aria-label="SmileCare bosh sahifa">
+          <span class="logo__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 100 100"><path fill="currentColor" d="M50 12c11 0 25-6 32 6 7 12-2 26-3 36-1 11 4 33-7 33-10 0-11-17-22-17s-12 17-22 17c-11 0-6-22-7-33-1-10-10-24-3-36 7-12 21-6 32-6z"/></svg>
+          </span>
+          <span class="logo__text">SmileCare</span>
+        </a>
+        <div class="footer__copy">© <span id="year"></span> SmileCare. Barcha huquqlar himoyalangan.</div>
+      </div>
+    </footer>
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>
+
+
