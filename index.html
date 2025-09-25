@@ -113,45 +113,53 @@
           <p class="section__subtitle">Sifatli davolash va zamonaviy yondashuv</p>
         </div>
         <div class="cards cards--services">
-          <article class="card reveal">
+          <article class="card reveal service-card" data-service="vinerlar">
             <div class="card__icon" aria-hidden="true">🎨</div>
             <h3 class="card__title">Vinerlar</h3>
             <p class="card__text">Tabiiy ko'rinishga ega, yupqa estetik qoplamalar (laminatlar).</p>
+            <div class="card__action">Ko'proq rasmlar →</div>
           </article>
-          <article class="card reveal">
+          <article class="card reveal service-card" data-service="zirkoniy">
             <div class="card__icon" aria-hidden="true">💎</div>
             <h3 class="card__title">Zirkoniy qoplamalar</h3>
             <p class="card__text">Mustahkam, allergiyasiz va estetik zirkoniy qoplamalar hamda tojlar.</p>
+            <div class="card__action">Ko'proq rasmlar →</div>
           </article>
-          <article class="card reveal">
+          <article class="card reveal service-card" data-service="ortopediya">
             <div class="card__icon" aria-hidden="true">🛡️</div>
             <h3 class="card__title">Ortopediya / protezlash</h3>
             <p class="card__text">Qisman, to'liq va byugel protezlar, ko'priklar va tojlar.</p>
+            <div class="card__action">Ko'proq rasmlar →</div>
           </article>
-          <article class="card reveal">
+          <article class="card reveal service-card" data-service="terapiya">
             <div class="card__icon" aria-hidden="true">🩺</div>
             <h3 class="card__title">Terapiya</h3>
             <p class="card__text">Kariesni davolash, kanal davosi va og'riqsiz muolajalar.</p>
+            <div class="card__action">Ko'proq rasmlar →</div>
           </article>
-          <article class="card reveal">
+          <article class="card reveal service-card" data-service="plombalar">
             <div class="card__icon" aria-hidden="true">🧰</div>
             <h3 class="card__title">Tish plombalari</h3>
             <p class="card__text">Estetik kompozit plombalar va qayta tiklash ishlari.</p>
+            <div class="card__action">Ko'proq rasmlar →</div>
           </article>
-          <article class="card reveal">
+          <article class="card reveal service-card" data-service="tozalash">
             <div class="card__icon" aria-hidden="true">🪥</div>
             <h3 class="card__title">Tishlarni tozalash</h3>
             <p class="card__text">Skaling, AirFlow va polirovka orqali professional tozalash.</p>
+            <div class="card__action">Ko'proq rasmlar →</div>
           </article>
-          <article class="card reveal">
+          <article class="card reveal service-card" data-service="halitoz">
             <div class="card__icon" aria-hidden="true">🌿</div>
             <h3 class="card__title">Halitoz (hidni yo'qotish)</h3>
             <p class="card__text">Og'iz bo'shlig'i hidini aniqlash va kompleks davolash.</p>
+            <div class="card__action">Ko'proq rasmlar →</div>
           </article>
-          <article class="card reveal">
+          <article class="card reveal service-card" data-service="breket">
             <div class="card__icon" aria-hidden="true">😬</div>
             <h3 class="card__title">Breket taqish</h3>
             <p class="card__text">Metall va keramika breket tizimlari, nazorat ko'riklari.</p>
+            <div class="card__action">Ko'proq rasmlar →</div>
           </article>
         </div>
       </div>
@@ -391,6 +399,22 @@
         </div>
       </div>
     </section>
+
+    <!-- Service Gallery Modal -->
+    <div class="modal" id="serviceModal">
+      <div class="modal__backdrop"></div>
+      <div class="modal__content">
+        <div class="modal__header">
+          <h3 class="modal__title">Xizmat rasmlari</h3>
+          <button class="modal__close" aria-label="Yopish">×</button>
+        </div>
+        <div class="modal__body">
+          <div class="image-grid" id="imageGrid">
+            <!-- Images will be loaded dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
